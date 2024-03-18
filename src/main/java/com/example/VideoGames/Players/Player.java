@@ -31,7 +31,7 @@ public class Player {
         return playerName;
     }
 
-    private String playerName;
+    public String playerName;
     @JsonIgnore
     @ManyToMany(mappedBy = "playersPlaying")
     private Set<Game> getSubjects = new HashSet<>();

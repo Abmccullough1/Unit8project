@@ -20,7 +20,7 @@ public class Devopler {
             generator = "dev_sequence"
     )
     private Long id;
-    private String devName;
+    public String devName;
 
     public Long getId() {
         return id;

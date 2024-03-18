@@ -1,6 +1,7 @@
 package com.example.VideoGames.Games;
 
 import com.example.VideoGames.Devs.Devopler;
+//import com.example.VideoGames.Players.Player;
 import com.example.VideoGames.Players.Player;
 import jakarta.persistence.*;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +11,6 @@ import java.util.Set;
 
 @Entity
 @Table
-
 public class Game {
     @Id
     @SequenceGenerator(
@@ -45,7 +45,7 @@ public class Game {
 
     @ManyToMany
     @JoinTable(
-            name = "playersPlaying",
+            name = "players_Playing",
             joinColumns = @JoinColumn(name=" game_id"),
             inverseJoinColumns =  @JoinColumn(name="player_id")
     )

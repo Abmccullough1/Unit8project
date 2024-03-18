@@ -60,20 +60,12 @@ public class GameController {
         Game game = gameRepository.findById(gameId).get();
         return game;
     }
-    @GetMapping("devs/{devId}")
-    Devopler getOneDev(@PathVariable Long devId) {
-        Devopler dev = devoplerRepository.findById(devId).get();
-        return dev;
-    }
+
     @DeleteMapping("delete/game/{gameId}")
     void deleteGame(@PathVariable Long gameId){
         Game game = gameRepository.findById(gameId).get();
         gameRepository.delete(game);
     }
 
-    @DeleteMapping("delete/dev/{devId}")
-    void deleteDev(@PathVariable Long devId){
-        Devopler dev = devoplerRepository.findById(devId).get();
-        devoplerRepository.delete(dev);
-    }
+
 }
