@@ -19,37 +19,23 @@
         </ul>
     </nav>
 
-    <!-- Developers -->
-    <section class="section">
-        <h2>Developers</h2>
-        <ul id="developers-list" class="list">
-            <!-- Developers list will populate -->
-        </ul>
-    </section>
-
-    <!-- Games -->
-    <section class="section">
-        <h2>Games</h2>
-        <ul id="games-list" class="list">
-            <!-- Games list will populate -->
-        </ul>
-    </section>
-
-    <!-- Players -->
-    <section class="section">
-        <h2>Players</h2>
-        <ul id="players-list" class="list">
-            <!-- Players list will populate-->
-        </ul>
-    </section>
-
     <!-- Add Developer Form -->
     <section class="section">
         <h2>Add Developer</h2>
         <form id="add-developer-form" class="form">
-            <label for="developer-name">Developer Name:</label>
-            <input type="text" id="developer-name" name="developer-name" class="input">
+            <label for="new-developer-name">Developer Name:</label>
+            <input type="text" id="new-developer-name" name="new-developer-name" class="input">
             <button type="submit" class="button">Add Developer</button>
+        </form>
+    </section>
+
+    <!-- Add Player Form -->
+    <section class="section">
+        <h2>Add Player</h2>
+        <form id="add-player-form" class="form">
+            <label for="new-player-name">Player Name:</label>
+            <input type="text" id="new-player-name" name="new-player-name" class="input">
+            <button type="submit" class="button">Add Player</button>
         </form>
     </section>
 
@@ -59,17 +45,20 @@
         <form id="add-game-form" class="form">
             <label for="game-title">Game Title:</label>
             <input type="text" id="game-title" name="game-title" class="input">
-            <button type="submit" class="button">Add Game</button>
-        </form>
-    </section>
 
-    <!-- Add Player Form -->
-    <section class="section">
-        <h2>Add Player</h2>
-        <form id="add-player-form" class="form">
-            <label for="player-name">Player Name:</label>
-            <input type="text" id="player-name" name="player-name" class="input">
-            <button type="submit" class="button">Add Player</button>
+            <!-- Dropdown menu for selecting developer -->
+            <label for="developer">Select Developer:</label>
+            <select id="developer" name="developer">
+                <!-- Developers list will populate dynamically -->
+            </select>
+
+            <!-- Dropdown menu for selecting players -->
+            <label for="players">Select Players:</label>
+            <select id="players" name="players" multiple>
+                <!-- Players list will populate dynamically -->
+            </select>
+
+            <button type="submit" class="button">Add Game</button>
         </form>
     </section>
 </div>
