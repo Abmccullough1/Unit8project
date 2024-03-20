@@ -27,7 +27,18 @@ public class DeveloperController {
         Devopler dev = devRepository.findById(devId).get();
         devRepository.delete(dev);
     }
-//    Matthews code goes here
+    @GetMapping("devs/{devId}")
+    Devopler getOneDev(@PathVariable Long devId) {
+        Devopler dev = devRepository.findById(devId).get();
+        return dev;
+    }
+
+    @PutMapping(path= "{devId}")
+    public Devopler updateDev(@PathVariable Long devId, @PathVariable Devopler devopler){
+        Devopler dev = devRepository.findById(devId).get();
+        dev.devName = devopler.devName;
+        return devRepository.save(dev);
+    }
 
 
     }
