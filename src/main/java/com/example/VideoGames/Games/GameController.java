@@ -54,18 +54,6 @@ public class GameController {
         return  gameRepository.save(game);
     }
 
-    @GetMapping("games/{gameId}")
-    Game getOneGame(
-            @PathVariable Long gameId) {
-        Game game = gameRepository.findById(gameId).get();
-        return game;
-    }
-
-    @DeleteMapping("delete/game/{gameId}")
-    void deleteGame(@PathVariable Long gameId){
-        Game game = gameRepository.findById(gameId).get();
-        gameRepository.delete(game);
-    }
-
+//Jerms Code goes here
 
 }
