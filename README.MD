@@ -7,7 +7,7 @@
  An API that organizes Video games, Developerss and online friends for easy use .
   COLOR PALETTE            |  DEMO
 :-------------------------:|:-------------------------:
-<img style="width: 100%;" src="colorpallet.png" alt="Color Palette">   |  <img style="width: 100%;" src="example-here-is-a-sample.gif" alt="DEMO"> 
+<img style="width: 100%;" src="colorpallet.png" alt="Color Palette">   |  <img style="width: 100%;" src="demo.mp4" alt="DEMO"> 
 </div>
 
 ## **KEY FEATURES:**
